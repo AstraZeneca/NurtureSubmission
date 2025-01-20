@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "nurture_stain"
+
+version = "0.0.0"
+
+description = "Nurture staining project."
+
+authors = [
+  { name="Jim Denholm", email="jim.denholm@astrazeneca.com"}
+]
+readme = "README.md"
+
+dependencies = ["torch", "torchvision==0.19.1", "torch_tools @ https://github.com/jdenholm/TorchTools/archive/v0.12.0.zip", "matplotlib==3.9.2", "scikit-image==0.24.0", "pandas==2.2.3", "pyarrow==17.0.0", "pandas-stubs==2.2.2.240909"]
+
+[tool.setuptools]
+package-dir = {}
+
+[tool.setuptools.package-data]
+torch_tools = ["py.typed"]
