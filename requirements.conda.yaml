@@ -1,0 +1,22 @@
+name: kidney-stain
+channels:
+  - main
+dependencies:
+  - python>=3.10
+  - pip
+  - pip:
+    - --editable .
+    - black
+    - pylint
+    - mypy
+    - pydocstyle
+    - pip
+    - pytest
+    - pre-commit
+    - torch
+    - scikit-learn
+    - tqdm
+    - imagecodecs
+    - tiffslide
+    - openpyxl
+    - ipykernel
